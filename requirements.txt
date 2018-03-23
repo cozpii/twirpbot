@@ -1,0 +1,6 @@
+# twripbot - GPL - Copyright 2018 - aswinmguptha
+
+twython
+nltk
+pymongo
+google-cloud-translate
