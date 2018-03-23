@@ -20,4 +20,4 @@ def connect():
     consumer_key_secret = f.readline().strip().split('=')[1].replace(' ', '')
     access_token = f.readline().strip().split('=')[1].replace(' ', '')
     access_token_secret = f.readline().strip().split('=')[1].replace(' ', '')
-    return Twython(consumer_key, consumer_key_secret, access_token, acc_token_secret)
+    return Twython(consumer_key, consumer_key_secret, access_token, access_token_secret)
