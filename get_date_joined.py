@@ -3,8 +3,8 @@ from twython import Twython
 import utils
 
 def get_date_joined(twitter, username):
-	date_joined = twitter.show_user(screen_name=username)
-        print date_joined['created_at']
+	user_info = twitter.show_user(screen_name=username)
+        print user_info['created_at']
 
 if __name__ == '__main__':
 	try:

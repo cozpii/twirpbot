@@ -3,8 +3,8 @@ from twython import Twython
 import utils
 
 def get_likes_count(twitter, username):
-	likes_count = twitter.show_user(screen_name=username)
-        print likes_count['favourites_count']
+	user_info = twitter.show_user(screen_name=username)
+        print user_info['favourites_count']
 
 if __name__ == '__main__':
 	try:

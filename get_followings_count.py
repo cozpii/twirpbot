@@ -3,8 +3,8 @@ from twython import Twython
 import utils
 
 def get_followings_count(twitter, username):
-	followings_count = twitter.show_user(screen_name=username)
-        print followings_count['friends_count']
+	user_info = twitter.show_user(screen_name=username)
+        print user_info['friends_count']
 
 if __name__ == '__main__':
 	try:
