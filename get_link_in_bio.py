@@ -13,6 +13,6 @@ if __name__ == '__main__':
 		print e
 	
 	try:
-		get_link_in_bio(twitter, 'telegram.org')
+		get_link_in_bio(twitter, 'telegram')
 	except Exception as e:
 		print e
