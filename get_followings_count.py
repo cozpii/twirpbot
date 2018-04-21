@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - abx1
+# twripbot - GPL - Copyright 2018 - aswinmguptha
 from twython import Twython
 import utils
 
