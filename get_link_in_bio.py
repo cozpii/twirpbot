@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - abx1
+# twripbot - GPL - Copyright 2018 - aswinmguptha
 from twython import Twython
 import utils
 
@@ -13,6 +13,6 @@ if __name__ == '__main__':
 		print e
 	
 	try:
-		get_link_in_bio(twitter, 'telegram')
+		get_link_in_bio(twitter, 'telegram.org')
 	except Exception as e:
 		print e
