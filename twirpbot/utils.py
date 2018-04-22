@@ -15,7 +15,7 @@ def translate(text):
 
 # Add the tokens in the tokens file
 def connect():
-    f = open('tokens', 'r')
+    f = open('../tokens', 'r')
     consumer_key = f.readline().strip().split('=')[1].replace(' ', '')
     consumer_key_secret = f.readline().strip().split('=')[1].replace(' ', '')
     access_token = f.readline().strip().split('=')[1].replace(' ', '')
