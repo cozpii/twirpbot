@@ -31,3 +31,7 @@ if __name__ == '__main__':
 		print get_tweets_count(twitter, 'aswinmguptha')
 	except Exception as e:
 		print e
+	try:
+		print get_list_count(twitter, 'a0xnirudh')
+	except Exception as e:
+		print e
