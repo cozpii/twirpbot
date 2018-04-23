@@ -5,7 +5,7 @@ def get_timeline_tweets(twitter, username):
     earlier_tweet_id = 0
     tweet_count = 0
     tweet_id_list = []
-    hashtag_cnt = 0
+    all_tweets = []
 
     while max_count > tweet_count:
         if earlier_tweet_id <= 0:
@@ -14,7 +14,7 @@ def get_timeline_tweets(twitter, username):
             tweets = twitter.get_user_timeline(screen_name=username, count=200, max_id=earlier_tweet_id-1, tweet_mode='extended', exclude_replies='false')
 
         for tweet in tweets:
-            print 'Tweet: ' + tweet['full_text']
+            all_tweets.append(tweet['full_text'])
             tweet_count += 1
             tweet_id_list.append(tweet['id'])
 
@@ -22,3 +22,5 @@ def get_timeline_tweets(twitter, username):
             earlier_tweet_id = sorted(tweet_id_list)[0]
         else:
             break
+
+    return all_tweets
