@@ -1,7 +1,6 @@
 # twripbot - GPL - Copyright 2018 - r00tus3r
 from twirpbot import connect
-from twirpbot import get_user_tweets_location
-from twirpbot import get_user_location
+from twirpbot import get_verification_status
 
 if __name__ == '__main__':
 	try:
