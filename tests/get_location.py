@@ -9,7 +9,7 @@ if __name__ == '__main__':
 	except Exception as e:
 		print e
 	try:
-		get_user_tweets_location(twitter, 'telegram')
+		get_user_tweets_location(twitter, 'aswinmguptha')
 	except Exception as e:
 		print e
 	try:
