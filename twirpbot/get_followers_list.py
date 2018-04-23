@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - abx1, r00tus3r
+# twirpbot - GPL - Copyright 2018 - abx1, r00tus3r
 
 def get_followers_list(twitter, username, count_per_req):
 	followers_list = []

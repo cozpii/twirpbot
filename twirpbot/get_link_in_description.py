@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - aswinmguptha
+# twirpbot - GPL - Copyright 2018 - aswinmguptha
 
 def get_link_in_description(twitter, username):
 	user_info = twitter.show_user(screen_name=username)

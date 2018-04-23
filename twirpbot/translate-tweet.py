@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - abx1
+# twirpbot - GPL - Copyright 2018 - abx1
 # -*- coding: utf-8 -*-
 
 import requests

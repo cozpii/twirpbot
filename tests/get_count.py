@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - r00tus3r
+# twirpbot - GPL - Copyright 2018 - r00tus3r
 from twirpbot import connect
 from twirpbot import get_count_of_hashtags_per_user
 from twirpbot import get_followers_count
