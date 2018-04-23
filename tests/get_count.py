@@ -5,6 +5,7 @@ from twirpbot import get_followers_count
 from twirpbot import get_followings_count
 from twirpbot import get_likes_count
 from twirpbot import get_tweets_count
+from twirpbot import get_list_count
 
 if __name__ == '__main__':
 	try:
