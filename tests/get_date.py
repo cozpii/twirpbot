@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - r00tus3r
+# twirpbot - GPL - Copyright 2018 - r00tus3r
 from twirpbot import connect
 from twirpbot import get_date_joined
 

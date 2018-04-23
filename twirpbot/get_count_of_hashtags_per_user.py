@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - r00tus3r
+# twirpbot - GPL - Copyright 2018 - r00tus3r
 
 def get_count_of_hashtags_per_user(twitter, username, hashtag):
     max_count = 100000 # the no of tweets to be retrieved

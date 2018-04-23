@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - r00tus3r
+# twirpbot - GPL - Copyright 2018 - r00tus3r
 
 from nltk import word_tokenize
 from collections import Counter

@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - aswinmguptha
+# twirpbot - GPL - Copyright 2018 - aswinmguptha
 
 twython
 nltk

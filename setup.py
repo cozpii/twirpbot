@@ -1,4 +1,4 @@
-# twripbot - GPL - Copyright 2018 - r00tus3r
+# twirpbot - GPL - Copyright 2018 - r00tus3r
 
 from setuptools import setup
 
