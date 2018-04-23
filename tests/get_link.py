@@ -13,6 +13,6 @@ if __name__ == '__main__':
 	except Exception as e:
 		print e
 	try:
-		get_link_in_description(twitter, 'rinkuaravind')
+		get_link_in_description(twitter, 'aswinmguptha')
 	except Exception as e:
 		print e
