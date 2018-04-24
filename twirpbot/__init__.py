@@ -21,3 +21,4 @@ from get_verification_status import *
 from get_media_tweets_count import *
 from utils import translate, connect
 from get_image_url_in_tweets import *
+from get_replies_count import *
