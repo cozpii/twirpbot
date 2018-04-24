@@ -6,6 +6,7 @@ from twirpbot import get_followings_count
 from twirpbot import get_likes_count
 from twirpbot import get_tweets_count
 from twirpbot import get_list_count
+from twirpbot import get_media_tweets_count
 
 if __name__ == '__main__':
 	try:
@@ -34,5 +35,9 @@ if __name__ == '__main__':
 		print e
 	try:
 		print get_list_count(twitter, 'a0xnirudh')
+	except Exception as e:
+		print e
+	try:
+		print get_media_tweets_count(twitter, 'aswinmguptha', 436)
 	except Exception as e:
 		print e
