@@ -13,6 +13,7 @@ def get_media_tweets_count(twitter, username, max_count):
             tweets = twitter.get_user_timeline(screen_name=username, count=200, max_id=earlier_tweet_id-1, tweet_mode='extended', exclude_replies='false', include_rts='false')
 
         for tweet in tweets:
+            tweet_count += 1
             tweet_id_list.append(tweet['id'])
             if 'media' in tweet['entities']:
                 media_count += 1
