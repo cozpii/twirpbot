@@ -23,4 +23,4 @@ from utils import translate, connect
 from get_image_url_in_tweets import *
 from get_replies_count import *
 from get_retweets_count import *
-from get_most_occuring_frequencies_in_tweets import *
+from get_most_common_tweet_frequency import get_most_common_tweet_frequency
