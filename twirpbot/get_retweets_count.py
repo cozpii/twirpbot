@@ -1,6 +1,7 @@
-# twirpbot - GPL - Copyright 2018 - aswinmguptha
+# twirpbot - GPL - Copyright 2018 - aswinmguptha, r00tus3r
 
-def get_retweets_count(twitter, username, max_count):
+def get_retweets_count(twitter, username):
+    max_count = 1000000
     earlier_tweet_id = 0
     tweet_count = 0
     tweet_id_list = []
