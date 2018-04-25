@@ -9,6 +9,7 @@ from twirpbot import get_list_count
 from twirpbot import get_media_tweets_count
 from twirpbot import get_replies_count
 from twirpbot import get_retweets_count
+from twirpbot import get_most_occuring_frequencies_in_tweets
 
 if __name__ == '__main__':
 	try:
@@ -49,5 +50,9 @@ if __name__ == '__main__':
 		print e
 	try:
 		print get_retweets_count(twitter, 'aswinmguptha', 400)
+	except Exception as e:
+		print e
+	try:
+		print get_most_occuring_frequencies_in_tweets(twitter, 'aswinmguptha', 400)
 	except Exception as e:
 		print e
