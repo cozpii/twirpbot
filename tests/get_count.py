@@ -10,6 +10,7 @@ from twirpbot import get_media_tweets_count
 from twirpbot import get_replies_count
 from twirpbot import get_retweets_count
 from twirpbot import get_most_common_tweet_frequency
+from twirpbot import get_most_common_retweet_frequency
 
 if __name__ == '__main__':
 	try:
@@ -54,5 +55,9 @@ if __name__ == '__main__':
 		print e
 	try:
 		print get_most_common_tweet_frequency(twitter, 'aswinmguptha', 400)
+	except Exception as e:
+		print e
+	try:
+		print get_most_common_retweet_frequency(twitter, 'aswinmguptha', 400)
 	except Exception as e:
 		print e
