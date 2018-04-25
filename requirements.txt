@@ -2,5 +2,5 @@
 
 twython
 nltk
-pymongo
-google-cloud-translate
+requests
+bs4
