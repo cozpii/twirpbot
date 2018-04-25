@@ -2,7 +2,8 @@
 
 from time import strptime, mktime
 from collections import Counter
-def get_most_occuring_frequencies_in_tweets(twitter, username, max_count):
+
+def get_most_common_tweet_frequency(twitter, username, max_count):
     earlier_tweet_id = 0
     tweet_count = 0
     tweet_id_list = []
@@ -23,6 +24,7 @@ def get_most_occuring_frequencies_in_tweets(twitter, username, max_count):
             tweet_id_list.append(tweet['id'])
             timestamp = int(mktime(strptime(tweet['created_at'],'%a %b %d %H:%M:%S +0000 %Y')))
             tweet_timestamp.append(timestamp)
+
             if len(tweet_timestamp) > 1:
                 tweet_frequency = (tweet_timestamp[len(tweet_timestamp) - 2] - tweet_timestamp[len(tweet_timestamp) - 1]) / (60*60)
                 frequency.append(tweet_frequency)
@@ -30,5 +32,6 @@ def get_most_occuring_frequencies_in_tweets(twitter, username, max_count):
             earlier_tweet_id = sorted(tweet_id_list)[0]
         else:
             break
+
     frequency_count = Counter(frequency)
     return frequency_count.most_common(5)
