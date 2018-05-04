@@ -6,7 +6,7 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk import ngrams
 
-def get_most_common_unigrams_in_tweets(name, maxTweets):
+def get_most_common_unigrams_in_tweets(twitter, name, maxTweets):
     stopwords_english = stopwords.words('english')
     id_of_earliest_tweet = None
     count = 0
@@ -19,10 +19,10 @@ def get_most_common_unigrams_in_tweets(name, maxTweets):
 
     while count < maxTweets:
         if id_of_earliest_tweet <= 0:
-            statuses = twitter.get_user_timeline(screen_name=name, count="100", tweet_mode='extended', include_rts='false', exclude_replies='false')
+            statuses = twitter.get_user_timeline(screen_name=name, count=200, tweet_mode='extended', include_rts='false', exclude_replies='false')
 
         else:
-            statuses = twitter.get_user_timeline(screen_name=name, count="100", tweet_mode='extended', max_id=id_of_earliest_tweet - 1, include_rts='false', exclude_replies='false')
+            statuses = twitter.get_user_timeline(screen_name=name, count=200, tweet_mode='extended', max_id=id_of_earliest_tweet - 1, include_rts='false', exclude_replies='false')
 
         new_statuses += statuses
 
@@ -52,4 +52,5 @@ def get_most_common_unigrams_in_tweets(name, maxTweets):
     all_unigrams_list = list(ngrams(all_unigrams_without_noise,1))
     frequencies = Counter(all_unigrams_list)
     for token,count in frequencies.most_common(10):
-        print token,count
+        #print token,count
+        return token

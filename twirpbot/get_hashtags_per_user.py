@@ -9,9 +9,9 @@ def get_hashtags_per_user(twitter, username):
 
     while max_count > tweet_count:
         if earlier_tweet_id <= 0:
-            tweets = twitter.get_user_timeline(screen_name=username, count=100, tweet_mode='extended', exclude_replies='false')
+            tweets = twitter.get_user_timeline(screen_name=username, count=200, tweet_mode='extended', exclude_replies='false')
         else:
-            tweets = twitter.get_user_timeline(screen_name=username, count=100, max_id=earlier_tweet_id-1, tweet_mode='extended', exclude_replies='false')
+            tweets = twitter.get_user_timeline(screen_name=username, count=200, max_id=earlier_tweet_id-1, tweet_mode='extended', exclude_replies='false')
 
         for tweet in tweets:
             print 'Tweet: ' + tweet['full_text']

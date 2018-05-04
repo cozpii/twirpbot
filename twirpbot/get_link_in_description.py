@@ -5,4 +5,4 @@ def get_link_in_description(twitter, username):
 	description = user_info['description']
 	if len(user_info['entities']['description']['urls']) > 0:
 		for i in range(len(user_info['entities']['description']['urls'])):
-			print user_info['entities']['description']['urls'][i]['expanded_url']
+			return user_info['entities']['description']['urls'][i]['expanded_url']
