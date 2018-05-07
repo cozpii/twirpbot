@@ -18,10 +18,3 @@ def translate(to_translate, to_language="auto", from_language="auto"):
     result = soup.find_all("div", "t0")
     result = str(result[0])[26:-6]
     return result
-
-if __name__ == '__main__':
-    try:
-        print translate("अगर हम मोक्ष चाहते हैं तो हमें उस संत की शरण ग्रहण करनी चाहिए जिसकी शरण में जाने से पूर्ण परमात्मा की प्राप्ति हो वह भी हमारे शास्त्रों अनुसार कौन है वह संत जानने के लिए अवश्य देखिए श्रद्धा टीवी दोपहर 2:00 बजे।", "en")
-    except Exception as e:
-        print e
-
