@@ -11,14 +11,14 @@ def get_followings_list(twitter, username, count_per_req):
 		else:
 			friends = twitter.get_friends_list(screen_name=username, count = 200, cursor = cur)
 
-		if (len(friends['users']) and friends['next_cursor'] != 0):
-			cur = friends['next_cursor']
-		else:
-			break
-
 		for i in xrange(len(friends['users'])):
 			followings_list.append(friends['users'][i]['screen_name'])
 
 		count += len(friends['users'])
+
+		if (len(friends['users']) and friends['next_cursor'] != 0):
+			cur = friends['next_cursor']
+		else:
+			break
 
 	return followings_list
