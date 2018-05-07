@@ -53,4 +53,4 @@ def get_most_common_unigrams_in_tweets(twitter, name, maxTweets):
     frequencies = Counter(all_unigrams_list)
     for token,count in frequencies.most_common(10):
         #print token,count
-        return token
+        return token[0]
