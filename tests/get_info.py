@@ -19,9 +19,7 @@ if __name__ == '__main__':
 
 	cnt = 0
 
-	#for name in all_followings:
-	for i in xrange(len(all_followings)):
-		name = all_followings[i+5]
+	for name in all_followings:
 		print str(cnt) +' Collecting data of ' + name
 		cnt += 1
 		dataset = ''
