@@ -22,7 +22,8 @@ def translate(to_translate, to_language="en", from_language="auto"):
 
 # Add the tokens in the tokens file
 def connect():
-    f = open('/home/r00tus3r/git/twirpbot/tokens', 'r')
+    path = ''
+    f = open(path + '/twirpbot/tokens', 'r')
     consumer_key = f.readline().strip().split('=')[1].replace(' ', '')
     consumer_key_secret = f.readline().strip().split('=')[1].replace(' ', '')
     access_token = f.readline().strip().split('=')[1].replace(' ', '')
