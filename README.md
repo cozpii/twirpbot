@@ -1,5 +1,6 @@
 # twirpbot
-Religious/Political bot detection in Twitter
+Python API for Data collection from Twitter.
+Developed with the aim to help beginners in data collection from twitter. It has many useful functionalities as of now. Many more features will be added in the future.
 
 ## Install
 ```
@@ -15,3 +16,8 @@ Religious/Political bot detection in Twitter
 
 ## Usage
 Sample scripts can be found in the tests folder
+
+## Authors
+* [Abhinand N](https://twitter.com/abx1__)
+* [Akshay Ajayan](https://twitter.com/r00tus3r)
+* [Aswin M Guptha](https://twitter.com/aswinmguptha)
