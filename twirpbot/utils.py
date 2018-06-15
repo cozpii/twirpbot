@@ -21,6 +21,7 @@ def translate(to_translate, to_language="en", from_language="auto"):
     return result
 
 # Add the tokens in the tokens file
+# Initialize the path variable with the path to the tokens file
 def connect():
     path = ''
     f = open(path + '/twirpbot/tokens', 'r')
