@@ -1,6 +1,6 @@
-# twirpbot
-Python API for Data collection from Twitter.
-Developed with the aim to help beginners in data collection from twitter. It has many useful functionalities as of now. Many more features will be added in the future.
+# Twirpbot-API
+TwirpbotAPI is a Python API for data collection from Twitter. It provides an interface to query account specific data. It makes use of Twython to retrieve the data. 
+Developed with the aim to help beginners in data collection from twitter. It has many useful functionalities as of now. The project is still under development.
 
 ## Install
 ```
